@@ -1,0 +1,378 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(68, 68, 68), grey, white);
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.sec-A {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/style/images/mainBG2.jpg");
+  background-size: cover;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-auto-rows: auto;
+  padding: 10px 20px 0px 20px;
+}
+
+.logo {
+  grid-column: 1/2;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-family: "Share", cursive;
+  font-size: 25px;
+}
+
+.nav-item {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-family: "Share", cursive;
+  font-size: 20px;
+}
+
+.nav-item a:hover {
+  color: yellow;
+}
+
+.bars {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bars a {
+  text-decoration: none;
+  color: white;
+  font-family: "Share", cursive;
+  font-size: 25px;
+  display: none;
+}
+
+.bars a:hover {
+  color: yellow;
+}
+
+/* main logo and links */
+
+.logo-links {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 0.5fr 10fr 0.5fr;
+}
+
+.social {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px !important;
+}
+
+.social a:hover {
+  color: yellow;
+}
+
+.main-logo {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Share", cursive;
+  color: white;
+}
+
+.main-logo p {
+  font-size: 50px;
+}
+
+.main-logo .p2 {
+  font-size: 150px;
+}
+
+.temp {
+  grid-column: 3/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.temp a {
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+}
+
+.temp a:hover {
+  color: yellow;
+}
+
+/* fast-links */
+
+.fast-links {
+  height: 19vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fast {
+  background-color: rgba(100, 100, 100, 0.639);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  width: 250px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fast a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Share", cursive;
+}
+
+.fast a:hover {
+  color: yellow !important;
+}
+
+@media(max-width: 1256px){
+  .main-logo p {
+    font-size: 35px;
+  }
+  .main-logo .p2 {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 1025px){
+  .sec-A {
+    width: 100vw;
+    height: 120vh;
+    background-image: url("/style/images/ipadBG.jpg");
+    background-size: cover;
+  }
+  .main-logo p {
+    font-size: 35px;
+  }
+  .main-logo .p2 {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 922px){
+  .main-logo p {
+    font-size: 35px;
+  }
+  .main-logo .p2 {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 839px) {
+  .sec-A {
+    width: 100vw;
+    height: 160vh;
+    background-image: url("/style/images/miniBG.jpg");
+    background-size: cover;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-auto-rows: auto auto;
+    padding: 10px 20px 0px 20px;
+  }
+  .logo {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+  .nav-item {
+    grid-row: 2/2;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column !important;
+  }
+  .nav-item a {
+    display: none;
+    margin: 20px 0px 20px 28px;
+    font-size: 23px;
+  }
+  .bars a {
+    display: block;
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .logo-links {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 0.5fr 2fr;
+  }
+  .logo-links a {
+    font-size: 35px;
+  }
+  .social {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .main-logo {
+    grid-column: 1/4;
+    grid-row: 2/2;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-logo p {
+    font-size: 30px;
+  }
+  .main-logo .p2 {
+    font-size: 90px;
+  }
+  .temp {
+    display: none;
+  }
+  .temp-bar {
+    display: block !important;
+  }
+  .fast-links {
+  height: 50vh;
+  display: flex;
+  flex-direction: column !important;
+  }
+  .fast{
+    margin: 10px;
+  }
+}
+
+@media (min-width: 839px) {
+  .nav-item a {
+    display: block !important;
+  }
+}
+
+@media (max-width: 686px){
+  .main-logo p {
+    font-size: 30px;
+  }
+  .main-logo .p2 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 609px){
+  .main-logo p {
+    font-size: 30px;
+  }
+  .main-logo .p2 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 572px){
+  .main-logo p {
+    font-size: 30px;
+  }
+  .main-logo .p2 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-logo p {
+    font-size: 20px;
+  }
+  .main-logo .p2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 457px) {
+  .main-logo p {
+    font-size: 20px;
+  }
+  .main-logo .p2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 381px){
+  .main-logo p {
+    font-size: 20px;
+  }
+  .main-logo .p2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 343px){
+  .main-logo p {
+    font-size: 20px;
+  }
+  .main-logo .p2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 305px){
+  .main-logo p {
+    font-size: 20px;
+  }
+  .main-logo .p2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 268px){
+  .main-logo p {
+    font-size: 20px;
+  }
+  .main-logo .p2 {
+    font-size: 30px;
+  }
+}
